@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # amazon-clone
 react app copy main functionality of amazon for practice
 =======
+=======
+>>>>>>> 43be13dc8ae96f3934dd742b30db8e677679725f
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +75,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
 >>>>>>> 285c0b6... Initialize project using Create React App
+=======
+>>>>>>> 43be13dc8ae96f3934dd742b30db8e677679725f
