@@ -10,7 +10,7 @@
 
 .header_logo {
   width: 100px;
-  object-fit: contain;
+  object-fit: contain; /* how image display in the container, this one is keep the origin ratio, fit the whole image in the container*/
   margin: 0 20px;
   margin-top: 18px;
 }
