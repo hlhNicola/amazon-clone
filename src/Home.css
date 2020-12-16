@@ -8,3 +8,19 @@
     rgba(0, 0, 0, 0)
   ); /* a mask img to cover the rest space */
 }
+
+.home_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.home_row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
