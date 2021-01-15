@@ -6,7 +6,7 @@ import { useStateValue } from './StateProvider';
 function CheckoutProduct({id,image, title, price, rating}) {
     const [{basket}, dispatch] = useStateValue()
 
-    const removeFromBasket = (id, basket) => {
+    const removeFromBasket = () => {
         dispatch({
             type: 'REMOVE_FROM_BASKET',
             id: id,
@@ -24,7 +24,7 @@ function CheckoutProduct({id,image, title, price, rating}) {
                 <div className="checkoutProduct_rating">
                     {Array(rating).fill().map((item, index)=>(<StarIcon className="star_icon"/>))}
                 </div>
-                <button onClick={removeFromBasket(basket)}>Remove from Basket</button>
+                <button onClick={removeFromBasket}>Remove from Basket</button>
             </div>
         </div>
         
