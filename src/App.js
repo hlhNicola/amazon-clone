@@ -6,7 +6,7 @@ import Login from './components/Login/Login';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useEffect } from "react";
 import { auth } from './firebase';
-import {useStateValue} from './StateProvider';
+import {useStateValue} from './data/StateProvider';
 
 function App() {
 
