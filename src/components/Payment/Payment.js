@@ -26,16 +26,16 @@ export default function Payment() {
 
     useEffect(() => {
         const getClientSecret = async () => {
-            const respose = await axios({
+            const response = await axios({
                 method: 'post',
-                url:  `/payments/create?total=${getBasketTotal(basket) * 100}`
+                url:  `/payments/create?total=${Math.ceil(getBasketTotal(basket) * 100)}`
             });
             setClientSecret(response.data.clientSecret)
         }
 
         getClientSecret();
     }, [basket])
-
+        // console.log('this is secret: ', clientSecret)
     const handleSubmit = async (e) => {
         e.preventDefault();
         setProcessing(true);
@@ -48,6 +48,11 @@ export default function Payment() {
             setSucceeded(true)
             setError(null)
             setProcessing(false)
+
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
+
             history.replace('/orders')
             })
     }
@@ -99,7 +104,7 @@ export default function Payment() {
                         <h3>Payment Method</h3>
                     </div>
                     <div className="payment_details">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <CardElement onChange={handleChange}/>
 
                             <div className="payment_priceContainer">
